@@ -131,6 +131,7 @@ passport.use('user', new LocalStrategy(
     developer: String,
     logo: String,
     download: String,
+    video: String,
     ready: String,
     description: String,
     size: String
@@ -155,6 +156,7 @@ passport.use('user', new LocalStrategy(
           name: ajapps.name,
           developer: ajapps.developer,
           download: ajapps.download,
+          video: ajapps.video,
           ready: ajapps.ready,
           description: ajapps.description,
           size: ajapps.size,

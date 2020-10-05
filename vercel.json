@@ -1,4 +1,66 @@
 {
     "version": 2,
-    "builds": [{ "src": "index.js", "use": "@now/node-server" }]
+    "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+    "routes": [
+        {
+            "src": "/apps/:ajappId",
+            "dest": "/index.js",
+            "methods": ["GET"]
+        },
+        {
+            "src": "/apps/:ajappId",
+            "dest": "/index.js",
+            "methods": ["GET"]
+        },
+        {
+            "src": "/login",
+            "dest": "/index.js",
+            "methods": ["GET"]
+        },
+        {
+            "src": "/register",
+            "dest": "/index.js",
+            "methods": ["GET"]
+        },
+        {
+            "src": "/secrets",
+            "dest": "/index.js",
+            "methods": ["GET"]
+        },
+        {
+            "src": "/appsuccessfull",
+            "dest": "/index.js",
+            "methods": ["GET"]
+        },
+        {
+            "src": "/submit",
+            "dest": "/index.js",
+            "methods": ["GET"]
+        },
+        {
+            "src": "/submit",
+            "dest": "/index.js",
+            "methods": ["POST"]
+        },
+        {
+            "src": "/logout",
+            "dest": "/index.js",
+            "methods": ["GET"]
+        },
+        {
+            "src": "/register",
+            "dest": "/index.js",
+            "methods": ["POST"]
+        },
+        {
+            "src": "/login",
+            "dest": "/index.js",
+            "methods": ["POST"]
+        },
+        {
+            "src": "/loginerror",
+            "dest": "/index.js",
+            "methods": ["GET"]
+        }
+]
   }
